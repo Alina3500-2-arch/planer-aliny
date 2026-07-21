@@ -8,7 +8,7 @@ struct RootView: View {
             CalendarPlaceholder().tabItem { Label("Календарь", systemImage: "calendar") }.tag(1)
             StatisticsView().tabItem { Label("Статистика", systemImage: "chart.bar") }.tag(2)
             SettingsView().tabItem { Label("Настройки", systemImage: "gearshape") }.tag(3)
-        }.tint(Color.accentPurple)
+        }.tint(Color.accentPurple).fontDesign(.rounded)
     }
 }
 
