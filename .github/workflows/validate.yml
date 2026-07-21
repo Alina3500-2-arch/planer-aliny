@@ -13,3 +13,16 @@ jobs:
         run: xcodegen generate
       - name: Compile without signing
         run: xcodebuild -project AlinaPlanner.xcodeproj -scheme AlinaPlanner -sdk iphonesimulator -configuration Debug CODE_SIGNING_ALLOWED=NO build
+      - name: Build unsigned device application
+        run: xcodebuild -project AlinaPlanner.xcodeproj -scheme AlinaPlanner -sdk iphoneos -configuration Release -derivedDataPath build CODE_SIGNING_ALLOWED=NO build
+      - name: Package IPA for AltStore or SideStore
+        run: |
+          mkdir -p Payload
+          cp -R build/Build/Products/Release-iphoneos/AlinaPlanner.app Payload/
+          zip -qry AlinaPlanner-unsigned.ipa Payload
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: AlinaPlanner-IPA
+          path: AlinaPlanner-unsigned.ipa
+          if-no-files-found: error
