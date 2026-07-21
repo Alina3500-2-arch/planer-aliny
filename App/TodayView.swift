@@ -108,7 +108,7 @@ private struct HabitCard: View {
                 Text(habit.title).lineLimit(1); Spacer()
                 HStack(spacing: 5) { ForEach(-3...3, id: \.self) { offset in
                     let d = PlannerDate.calendar.date(byAdding: .day, value: offset, to: date)!
-                    Circle().fill(habit.completedDates.contains(PlannerDate.key(d)) ? Color.accentPurple : Color.gray.opacity(0.12)).frame(width: 10, height: 10)
+                    Circle().fill(habit.completedDates.contains(PlannerDate.key(d)) ? Color.accentPurple : Color.gray.opacity(0.12)).frame(width: 16, height: 16)
                 } }
             }
         }
