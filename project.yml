@@ -17,6 +17,7 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: ru.alina.planner
+        GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_CFBundleDisplayName: "Планер Алины"
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: true
         INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: true
@@ -37,4 +38,3 @@ targets:
         INFOPLIST_FILE: Widgets/Info.plist
         CODE_SIGN_ENTITLEMENTS: Widgets/Widgets.entitlements
         SKIP_INSTALL: true
-
