@@ -12,6 +12,7 @@ struct TodayView: View {
             ScrollView {
                 LazyVStack(spacing: 18) {
                     header
+                    ResultDashboardView()
                     WeekStrip(selectedDate: $selectedDate)
                     HabitCard(date: selectedDate) { addMode = .habit }
                     TaskCard(title: "Задачи", date: selectedDate) { addMode = .today }
