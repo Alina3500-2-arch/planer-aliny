@@ -16,10 +16,10 @@ targets:
       - Shared
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: ru.alina.planner
+        PRODUCT_BUNDLE_IDENTIFIER: com.aline456.treneraliny
         GENERATE_INFOPLIST_FILE: YES
-        INFOPLIST_KEY_CFBundleDisplayName: "Alina Planner"
-        INFOPLIST_KEY_CFBundleName: "AlinaPlanner"
+        INFOPLIST_KEY_CFBundleDisplayName: "Trener Aliny"
+        INFOPLIST_KEY_CFBundleName: "TrenerAliny"
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: true
         INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: true
         INFOPLIST_KEY_UILaunchScreen_Generation: true
@@ -35,7 +35,7 @@ targets:
       - Shared
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: ru.alina.planner.widgets
+        PRODUCT_BUNDLE_IDENTIFIER: com.aline456.treneraliny.widget
         INFOPLIST_FILE: Widgets/Info.plist
         CODE_SIGN_ENTITLEMENTS: Widgets/Widgets.entitlements
         SKIP_INSTALL: true
