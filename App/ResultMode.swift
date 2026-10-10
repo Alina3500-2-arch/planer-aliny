@@ -1,5 +1,6 @@
 import SwiftUI
 import Foundation
+import Combine
 
 // Independent storage: never modifies the existing planner.data.v1 archive.
 struct ResultWork: Identifiable, Codable {
